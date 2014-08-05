@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vernon>
+  <dictionary id="person">
+    <name>Person</name>
+    <field id="name_type">
+      <name>Name Type</name>
+    </field>
+    <field id="title">
+      <name>Title</name>
+    </field>
+    <field id="firstnames">
+      <name>Firstnames</name>
+    </field>
+    <field id="known_as">
+      <name>Known As</name>
+    </field>
+    <field id="initials">
+      <name>Initials</name>
+    </field>
+    <field id="lastname">
+      <name>Lastname</name>
+    </field>
+    <field id="name_date">
+      <name>Name Date</name>
+    </field>
+    <field id="post_nominals">
+      <name>Post Nominals</name>
+    </field>
+    <field id="gender">
+      <name>Gender</name>
+    </field>
+    <field id="address_type">
+      <name>Address Type</name>
+    </field>
+    <field id="address_line_1">
+      <name>Address Line 1</name>
+    </field>
+    <field id="address_line_2">
+      <name>Address Line 2</name>
+    </field>
+    <field id="address_line_3">
+      <name>Address Line 3</name>
+    </field>
+    <field id="address_place">
+      <name>Address Place</name>
+    </field>
+    <field id="address_postcode">
+      <name>Postcode</name>
+    </field>
+    <field id="address_date">
+      <name>Address Date</name>
+    </field>
+    <field id="general_notes">
+      <name>General Notes</name>
+    </field>
+    <field id="bio_type">
+      <name>Biographical Type</name>
+    </field>
+    <field id="bio_role">
+      <name>Biographical Role</name>
+    </field>
+    <field id="bio_date">
+      <name>Biographical Date</name>
+    </field>
+    <field id="bio_event">
+      <name>Biographical Event</name>
+      <relatedFile>EVENT</relatedFile>
+    </field>
+    <field id="bio_person">
+      <name>Biographical Person</name>
+    </field>
+    <field id="bio_place">
+      <name>Biographical Place</name>
+    </field>
+    <field id="bio_notes">
+      <name>Biographical Notes</name>
+    </field>
+    <field id="bio_display">
+      <name>Biographical Display</name>
+    </field>
+    <field id="user_auth_amv1">
+      <name>Medical</name>
+    </field>
+    <field id="user_auth_amv1_date">
+      <name>Medical Date</name>
+    </field>
+    <field id="user_auth_amv1_notes">
+      <name>Medical Notes</name>
+    </field>
+    <field id="user_auth_amv2">
+      <name>Cenotaph Keyword</name>
+    </field>
+    <field id="user_auth_amv2_date">
+      <name>Cenotaph Keyword Date</name>
+    </field>
+    <field id="user_auth_amv2_notes">
+      <name>Cenotaph Keyword Notes</name>
+    </field>
+    <field id="av">
+      <name>Photo/Audio-Visual Ref</name>
+      <relatedFile>AV</relatedFile>
+    </field>
+    <field id="av_notes">
+      <name>Photo/Audio-Visual Notes</name>
+    </field>
+    <field id="user_auth_mv1">
+      <name>Force Keyword</name>
+    </field>
+    <field id="do_id">
+      <name>Document</name>
+      <relatedFile>DOCUMENT</relatedFile>
+    </field>
+    <field id="do_notes">
+      <name>Document Notes</name>
+    </field>
+    <field id="dde_filename">
+      <name>External File Name</name>
+    </field>
+    <field id="dde_category">
+      <name>External File Category</name>
+    </field>
+    <field id="dde_notes">
+      <name>External File Notes</name>
+    </field>
+    <field id="user_auth_amv3">
+      <name>Medals / Awards</name>
+    </field>
+    <field id="user_auth_amv3_date">
+      <name>Medals / Awards Date</name>
+    </field>
+    <field id="user_auth_amv3_notes">
+      <name>Medals / Awards Notes</name>
+    </field>
+    <field id="ethnicity">
+      <name>Ethnicity</name>
+    </field>
+    <field id="ethnicity_community">
+      <name>Ethnicity Community</name>
+    </field>
+    <field id="ethnicity_language">
+      <name>Ethnicity Language</name>
+    </field>
+    <field id="ethnicity_notes">
+      <name>Ethnicity Notes</name>
+    </field>
+    <field id="religion">
+      <name>Religion</name>
+    </field>
+    <field id="user_auth_amv5">
+      <name>Relationship Type</name>
+    </field>
+    <field id="user_auth_amv5_date">
+      <name>Relationship Type Date</name>
+    </field>
+    <field id="user_auth_amv5_notes">
+      <name>Relationship Type Notes</name>
+    </field>
+    <field id="au_originating_database_date">
+      <name>Originating Date</name>
+    </field>
+    <field id="au_originating_database_no">
+      <name>Originating No</name>
+    </field>
+    <field id="au_manager_note">
+      <name>Manager Note</name>
+    </field>
+    <field id="au_cataloger">
+      <name>Cataloger</name>
+    </field>
+    <field id="au_cataloger_date">
+      <name>Date Catalogued</name>
+    </field>
+    <field id="general_flag">
+      <name>General Flag</name>
+    </field>
+    <field id="general_flag_notes">
+      <name>General Flag Notes</name>
+    </field>
+    <field id="user_text_1">
+      <name>Obituary</name>
+    </field>
+  </dictionary>
+  <person id="54887">
+    <name_type row="1">Given</name_type>
+    <name_type row="2">alternative</name_type>
+    <name_type row="3">alternative</name_type>
+    <name_type row="4">Service Number</name_type>
+    <name_type row="5">Service Number</name_type>
+    <name_type row="6">nickname</name_type>
+    <firstnames row="1">James</firstnames>
+    <known_as row="2">Jim</known_as>
+    <known_as row="3">Jimmy</known_as>
+    <known_as row="4">9/286</known_as>
+    <known_as row="5">31156</known_as>
+    <known_as row="6">Billybob</known_as>
+    <initials row="1">J</initials>
+    <lastname row="1">Hargest</lastname>
+    <lastname row="6">Hargest</lastname>
+    <gender row="1">male</gender>
+    <address_type row="1">Before Enlistment</address_type>
+    <address_type row="2">Before Enlistment</address_type>
+    <address_type row="3">Before Enlistment</address_type>
+    <address_type row="4">NoK At Embarkation</address_type>
+    <address_type row="5">NoK At Embarkation</address_type>
+    <address_type row="6">NoK At Embarkation</address_type>
+    <address_type row="7">Cemetery</address_type>
+    <address_type row="8">Memorial</address_type>
+    <address_line_1 row="1">Mandeville, New Zealand</address_line_1>
+    <address_line_1 row="2">Mandeville, New Zealand</address_line_1>
+    <address_line_1 row="3">Rakauhauka, Invercargill, New Zealand</address_line_1>
+    <address_line_1 row="4">James Hargest (father), Mandeville, Southland, New Zealand</address_line_1>
+    <address_line_1 row="5">James Hargest (father), Mandeville, Southland, New Zealand</address_line_1>
+    <address_line_1 row="6">Mrs Marie Henrietta Hargest (wife), Rakauhauka, Invercargill, New Zealand</address_line_1>
+    <address_line_1 row="7">Hottot-Les-Bagues War Cemetery, Calvados, France</address_line_1>
+    <address_line_1 row="8">Roll of Honour, New Zealand Parliament, first-floor main foyer, Wellington, New Zealand</address_line_1>
+    <address_line_2 row="7">I.C.2.</address_line_2>
+    <address_place row="1">Mandeville/Southland/South Island/New Zealand</address_place>
+    <address_place row="2">Mandeville/Southland/South Island/New Zealand</address_place>
+    <address_place row="3">Invercargill/Southland/South Island/New Zealand</address_place>
+    <address_place row="4">Mandeville/Southland/South Island/New Zealand</address_place>
+    <address_place row="5">Mandeville/Southland/South Island/New Zealand</address_place>
+    <address_place row="6">Invercargill/Southland/South Island/New Zealand</address_place>
+    <address_place row="7">Hottot-Les-Bagues War Cemetery, Calvados/France</address_place>
+    <address_date row="1">14 Aug 1914</address_date>
+    <bio_type row="1">Born</bio_type>
+    <bio_type row="2">Career Type</bio_type>
+    <bio_type row="3">Career Type</bio_type>
+    <bio_type row="4">Career Type</bio_type>
+    <bio_type row="5">Enlistment</bio_type>
+    <bio_type row="6">Enlistment</bio_type>
+    <bio_type row="7">WW1/Embarkation</bio_type>
+    <bio_type row="8">WW1/Embarkation</bio_type>
+    <bio_type row="9">WW2/Embarkation</bio_type>
+    <bio_type row="10">Campaign</bio_type>
+    <bio_type row="11">WW2/Capture</bio_type>
+    <bio_type row="12">Capture</bio_type>
+    <bio_type row="13">Capture</bio_type>
+    <bio_type row="14">Discharge</bio_type>
+    <bio_type row="15">Discharge</bio_type>
+    <bio_type row="16">Post War Occupation</bio_type>
+    <bio_type row="17">Post War Occupation</bio_type>
+    <bio_type row="18">Died</bio_type>
+    <bio_role row="2">Farmer (cattle and sheep)</bio_role>
+    <bio_role row="3">Farmer (cattle and sheep)</bio_role>
+    <bio_role row="4">Farmer (cattle and sheep)</bio_role>
+    <bio_role row="7">Second Lieutenant</bio_role>
+    <bio_role row="8">Lieutenant</bio_role>
+    <bio_role row="9">Colonel</bio_role>
+    <bio_role row="14">Lieutenant Colonel</bio_role>
+    <bio_role row="15">Brigadier</bio_role>
+    <bio_role row="16">Farmer (cattle and sheep)</bio_role>
+    <bio_role row="17">Member of Parliament</bio_role>
+    <bio_date row="1">04 Sep 1891</bio_date>
+    <bio_date row="2">Pre 1914 {Unknown Age}</bio_date>
+    <bio_date row="3">Unknown {Unknown Age}</bio_date>
+    <bio_date row="4">Unknown {Unknown Age}</bio_date>
+    <bio_date row="7">16 Oct 1914 {Age 30}</bio_date>
+    <bio_date row="8">22 Feb 1916</bio_date>
+    <bio_date row="9">02 May 1940</bio_date>
+    <bio_date row="11">27 Nov 1941</bio_date>
+    <bio_date row="16">Post 1945</bio_date>
+    <bio_event row="7">
+      <event-ref id="1267"/>
+    </bio_event>
+    <bio_event row="8">
+      <event-ref id="683"/>
+    </bio_event>
+    <bio_event row="9">
+      <event-ref id="1241"/>
+    </bio_event>
+    <bio_event row="10">
+      <event-ref id="1346"/>
+    </bio_event>
+    <bio_event row="11">
+      <event-ref id="881"/>
+    </bio_event>
+    <bio_event row="12">
+      <event-ref id="1050"/>
+    </bio_event>
+    <bio_event row="13">
+      <event-ref id="1022"/>
+    </bio_event>
+    <bio_person row="14">Regular Army</bio_person>
+    <bio_person row="15">5 Infantry Brigade</bio_person>
+    <bio_place row="1">Gore/Southland/South Island/New Zealand</bio_place>
+    <bio_place row="5">Otago/New Zealand</bio_place>
+    <bio_place row="6">Trentham/Upper Hutt/Wellington/New Zealand</bio_place>
+    <bio_place row="7">Port Chalmers/Dunedin/Otago/New Zealand</bio_place>
+    <bio_place row="8">Wellington/New Zealand</bio_place>
+    <bio_place row="9">Wellington/New Zealand</bio_place>
+    <bio_place row="18">France</bio_place>
+    <bio_notes row="1">Gore, Southland, New Zealand</bio_notes>
+    <bio_notes row="5">--Official History of the Otago Regiment</bio_notes>
+    <bio_notes row="11">Brigadier Hargest was taken prisoner in the Bardia-Sollum area during the early stages of the Second Libyan Campaign. Most of the New Zealanders captured at this point were infantry and supporting elements whose positions had been overrun by German tanks. A warrant officer reported that the artillery were out of shells and that the supply line was cut. Captured by Germans, the prisoners were guarded by Italians. During the rest of the night [26 November] 28 Battalion stood-to while Ravenstein Group streamed past, B Company searched for souvenirs over its own private battlefield, 23 Battalion reorganised after its stiff fight, 22 Battalion on an escarpment near Bardia escaped attention, and Rommel prepared to go back to the Tobruk front as fast as possible. The next day Rommel began the return from Bardia to Tobruk, fell upon 5 Brigade Headquarters at Sidi Azeiz, and, after a one-sided action, captured it. (Cody 1956, p. 154)</bio_notes>
+    <bio_notes row="12">Sulmona, Italy</bio_notes>
+    <bio_notes row="18">France</bio_notes>
+    <bio_display row="1">Son of James and Mary Hargest, of Mandeville, Southland, and was educated at Gore and Mandeville schools. In 1917, he married Marie Henrietta Wilkie (22/48) (d1962), ARRC (Associate Royal Red Cross), who was the daughter of William Wilkie. They had three sons and a daughter – one son, Geoffrey Robert Hargest (447418) died of wounds in Italy in 1944 and another, Peter Miles Hargest (207275) died as the result of an accident while serving in Malaya nearly a decade later 1952. He served on the Land Board, Land Purchase Board, and Assessment Court. He was a member of the Southland Education Board from 1936, and Honorary A.D.C. to the Governor-General from 1925 to 1930. His political career began in 1925, when he contested the Invercargill seat over several terms and represented the district in 1931, 1935, and 1938. He commanded the Southland Infantry Regiment and the 3rd New Zealand Infantry Brigade between World Wars I and II. He went on active service as Officer Commanding, 5th Infantry Brigade, with the 2nd New Zealand Expeditionary Force. Taken prisoner in November 1941, Hargest was held in Bardia for a week before being transferred one night, along with a large party of other senior officers, to Benghazi by submarine. Other officers who were taken by submarine went direct to Italy. He was later transferred to Sulmona (Italy) and finally to Campo PG 12 in the spring of 1942. It was from Campo PG 12 that he made his escape to Switzerland along with Brigadier R. Miles. There had been several unsuccessful attempts to escape from the villa by one or two of the officers in the spring and summer of 1942. Finally in September entry was gained to a disused and sealed-up chapel, from which a tunnel leading into the outer garden was begun. All the officers and other ranks in the camp assisted in some way in the tunnelling and other preparations for this attempt. On a wet evening - 29 March 1943 - the six men went out through the completed tunnel, and by 9.30 p.m. four were on their way to the railway station to catch a night train to Milan, and the two generals had set off to walk to the Swiss border. The latter and two of the others had the misfortune to be recaptured; but the two New Zealand brigadiers travelled by train to Como, and at half past ten on the evening following the break-out they crawled through the frontier wire near Chiasso into Switzerland.&quot; (Mason 1954, p. 213). In his book 'Farewell Campo 12', Hargest describes his experiences from his capture on 27 November 1941 to his eventual escape. He disguised himself as a French railwayman in clothing adapted from articles available in the camp and, with a supply of goods saved up over several months, he and Brigadier R. Miles made their way to the Swiss border. After the invasion of France on 6 June 1944, arrangements began to be made for the repatriation of prisoners of war. James Hargest was appointed to command the New Zealand Reception Group in England. He took part in the D Day landing in Normandy as New Zealand observer and was killed in action on his last day in the field before taking command of the Prisoner of War Reception Group. The following extracts on Brigadier Hargest's wartime service were taken from the 'N.Z.E.F. Times':. &quot;Another echo of the Balkan campaign and the part played in it by the Second New Zealand Expeditionary Force is the announcement of awards His Majesty King George of Greece has been pleased to confer on several New Zealand officers, including Major-General B.C. Freyberg, V.C., D.S.O., etc., leader of the force and commander of the allied forces in Crete. One group, all senior officers, have been awarded the Greek Military Cross (Class A), and the other group the Greek Military Cross (Class C). Recipients of the higher award are Major-General B.C. Freyberg, Brigadier (now Major-General) E. Puttick, D.S.O., A.D.C. Brigadier R. Miles, D.S.O., M.C., Brigadier J. Hargest, D.S.O., M.C., V.D., Brigadier H.E. Barrowclough, D.S.O., M.C., and Brigadier L.M. Inglis, M.C. The above awards were made at a ceremony at the main New Zealand base camp some time ago, the decorations being presented by the Greek Minister of War on behalf of His Majesty King of the Hellenes, and in the presence of a large attendance of officers and men. A guard of honour was provided by New Zealanders, led by the New Zealand camp pipe band. At the conclusion of the ceremony General Freyberg called for three cheers for the King of Greece.&quot; (from an article entitled 'Balkan Campaign: Greek Awards to N.Z. Officers, Ceremony at Camp', NZEF Times, 20 October 1941, vol. 1, no. 17, p. 1). &quot;Wellington. — Warm praise for the men of 2 N.Z.E.F. is expressed in published letters received by the Prime Minister, Mr. Fraser, from Brigadiers J. Hargest and R. Miles, both of whom are prisoners-of-war in Italy. Referring to the battle in which they were captured, Brigadier Hargest says: 'We were not taken by surprise but were well warned and were only overwhelmed by sheer weight after all our guns had been destroyed. No man of ours left his place and I saw many acts of gallantry that, if I live to return, I hope to see rewarded. The only troops who moved were gallant men going forward to threatened spots. After it was over, after two hours, General Rommel congratulated me on the courage of our men. Major A. N. Grigg fell like a true hero. I would be grateful if you would tell the people of my unbounded admiration for their soldier relatives, who were never finer than when facing a hopeless situation or in the first sad hours of captivity.' Brigadier Miles also paid a tribute to his men, saying: 'It is a source of pride to me, as I trust it may be a comfort to mourners, that all ranks of the artillery fought nobly and well. I am confident that their efforts and sacrifice, though at such a heavy cost, largely contributed to the success with which the Division withstood attacks from superior forces and was able to go on to eventual success.' Both Brigadiers and Bishop Gerard, Senior Chaplain to Forces, held a little Anzac service by themselves on April 25. They are in good health and are being treated well.” (from an article entitled '&quot;No Man Left His Place&quot; Brigadiers Hargest And Miles Write To Prime Minister', N.Z.E.F. Times, 14 September 1942, vol. 2, no. 64, p. 1). &quot;How he nearly shot up Rommel's headquarters, and later had a talk with the German commander, is told by Brigadier J. Hargest in an interview with the U.K. correspondent of the New Zealand Associated Press. Brigadier Hargest, who was taken prisoner at Sidi Aziez, near Bardia, in November, 1941, escaped from a prisoners-of-war camp in Italy and recently arrived in England. He was commanding the 5th New Zealand Brigade defending the Sidi Aziez airfield, which became an island when swamped by the German advance. In the midst of the stream of advancing panzers, nevertheless, the New Zealanders continued firing at the enemy, hitting tanks and trucks. Actually it was Rommel's headquarters which the brigade had encountered and Brigadier Hargest discovered this when he was taken prisoner. A British officer who was a prisoner in Rommel's headquarters said &quot;We were mighty glad when you stopped firing. It was extremely hot.&quot;. Brigadier Hargest's &quot;island&quot; had no chance against the advancing Germans, who shelled it to pieces then overran it with tanks. One tank came at the brigadier with its guns pointing straight towards him. He said to himself: 'I'm hanged if I am going to put up my hands.' &quot;I shoved them in my pockets and just stood there. At the last moment the tank sheered off from me and went straight over a slit trench in which were two of my men, but they were not harmed. &quot;. Enemy Praise: Brigadier Hargest was eventually taken prisoner by General Kramer, who was most generous in his praise of the way in which the New Zealanders had fought. The enemy treated him with punctilious politeness and asked him to retain his revolver but when General Kramer was not looking it was quickly whipped off him by a soldier. Later Brigadier Hargest was taken to see Marshal Rommel. He entered the tent thinking, 'I'm hanged if I am going to salute this fellow', so he just bowed stiffly from the waist towards Rommel. The German commander was cold and austere and he did not like this. Through an interpreter, he told Brigadier Hargest that he expected him to salute. Brigadier Hargest replied, &quot;I do not salute enemy officers. I only salute superior officers of my own army. &quot;. Rommel then said, &quot;Your men fight well&quot;, to which Brigadier Hargest replied, &quot;Yes, but your tanks were too much for us.&quot; Rommel said, &quot;But you have tanks&quot;, and Brigadier Hargest replied, &quot;Yes, but not here.&quot; Rommel then said, &quot;Perhaps then my men are better after all. &quot; (from an article entitled 'Brigadier Hargest's Experiences: Interview With Rommel – Escape From P.W. Camp', N.Z.E.F. Times, 17 January 1944, vol. 3, no. 134, p. 8). &quot;Wanganui.— A meeting with Brigadier J. Hargest in London was described by a Wanganui soldier writing home. &quot;I had lunch a few days ago with Brig. Hargest who to my mind is this war's premier escapee, &quot; wrote the soldier. &quot;It is a wonderful effort from one of his years and rank. He could have sat back in comfort in a general’s prison. He is extraordinarily well, and is still the same courteous, calm, and cheerful brigadier for whom we have so much respect. &quot; (from an article entitled &quot;War’s Premier Escapee&quot;, N.Z.E.F. Times, 14 February 1944, vol. 3, no. 138, p. 1). &quot;Their Majesties talked with Brigadier R.S. Park, Group-Capt. A.J. Manson and Mr. S.R. Skinner, and when the King saw Brigadier Hargest he made straight for him and continued the conversation begun two days previously at the Buckingham Palace investiture at which the Brigadier received awards. Both their Majesties seemed particularly interested to hear more of how he escaped. &quot;We knew you had arrived in England safely,&quot; the Queen told Brigadier Hargest, no doubt having read newspaper accounts.&quot; (from an article entitled 'King and Queen Visit London Forces Club', N.Z.E.F. Times, 6 March 1944, vol. 3, no. 141, p. 2). &quot;London.— Extracts are now available from Brigadier Hargest’s speech to a private meeting of the Royal Empire Society, at which Sir Alexander Godley presided. Referring to Crete the Brigadier said: &quot;I thought I had seen severe bombardments, but I have never seen anything to equal the bombardments the enemy gave us before sending in his gliders and parachutists. When he stopped the bombardment and sent in his airborne troops, I don’t think we had a single soul alive in that sector. I lost 70 per cent of my brigade, but I still believe that if we had had air support we could have held Crete. The governing factor was in the lack of air cover for our ships.&quot;. Speaking of his imprisonment in Italy, the brigadier said that he was sent to Salerno, in the Abruzzi country. &quot;Only recently I had a letter from my own son saying he was just one ridge of country removed from my old home, &quot; he continued, &quot;Later we went to Florence and lived in a castle there. There were 14 senior officers and 15 men. We decided that as soon as we got ourselves organised we would endeavour to escape. We decided to make a military operation of it and to dig our way out of the castle.&quot;. Escape: &quot; It took us five months&quot;, Brigadier Hargest went on. &quot;We began by collecting what money we could and such food as chocolate. We cut up army blankets for clothes and made a cap and jacket for each of us. I dyed my trousers with a bottle of ink and a tin of blacking. Five of us dug our way down through the castle chapel, which we used as a place to keep our stores. We dug down 10 feet, then under the length of the room, the battlements, an area of enclosed ground, and up again outside it. It was very solid ground, being nearly all rock, and the only tools we had were a kitchen knife and bars of iron which we used as levers, but we eventually worked our way out. We shored up the hole so that no unsuspecting Italian should fall in and then waited for a stormy night in order to deceive the sentries, whom we believed would stay in their boxes. We eventually got the right kind of night. The sentries were inactive and we got out.&quot; After seven months in Switzerland, Brigadier Hargest made his way to Spain. Morale in France: &quot;Of my travels through France I must not say much&quot;, the Brigadier carried on. &quot;I have been a bit critical of the people of France since the occupation, especially after having heard that they had become apathetic and defeatist. Germany was giving that out all over the world and the Italian papers were full of the apathy of the French. That is not true to-day. There is a stirring in France to-day such as has occurred in few countries at any time. I was helped by hundreds of people, most of whom had not the slightest idea who I was or what I was about, but they knew I was a refugee. All classes – rich, poor, the very humblest working classes, servant girls – every one of them had the power to hand me over for a good reward to the enemy, but I don’t believe it ever entered their minds. Once or twice I had to go into houses in a great hurry and ask them to help us. There was no question about that. They just said - we will take the risk . To-day in France, there are thousands upon thousands of young men who have given up their homes after having been called up for forced labour in Germany, but instead of going to Germany they have taken to the mountains. They are doing their best to hold the positions until the Allied armies come. Meantime they go down to the railways and sabotage trains. I was greatly moved by the way the French were carrying on and were prepared to carry on in the hope that they would have some share in the redemption of their country. We know that there are a great number of Vichyites and that a great number of the young people have been poisoned by German propaganda into becoming members of the militia. But that is not France. The main body of France is waiting for its chance. I am hoping that we British people will give them that chance and once they get their freedom, will help them to their feet. Brigadier Hargest received the CBE and two Bars to his DSO from His Majesty the King at a recent investiture at Buckingham Palace.&quot; (from an article entitled 'Brigadier's Escape and Experiences in France', N.Z.E.F. Times, 6 March 1944, vol. 3, no. 141, p. 5). &quot;Wellington.— Brigadier J. Hargest has been wounded in Normandy, according to official advice received by his wife. It was stated that his injuries consisted of multiple wounds on the head and left shoulder, but these were superficial and Brigadier Hargest had returned to duty. He was temporarily attached to a famous British division, with which he went to Normandy.&quot; (from an article entitled 'Brigadier Hargest Wounded', N.Z.E.F. Times, 10 July 1944, vol. 4, no. 159, p. 4). &quot;The death in action in France of Brigadier James Hargest, DSO, MC, 2 NZEF, was reported in an agency message from London during the week. It will be recalled that the late Brigadier Hargest was Member of Parliament for Awarua. Captured in the action near Bardia in the 1941 desert campaign, he was taken to a prison camp in Italy, but subsequently managed to escape to Switzerland. Later, he made his way across France to Spain, from whence he returned to England. It was earlier reported that the Brigadier was serving in Normandy with a famous British formation and that he had suffered superficial wounds in action.&quot; (N.Z.E.F. Times, 28 August 1944, vol. 4, no. 166, p. 4). &quot;London.— An organization is being established in England to deal with repatriated prisoners of war when they arrive in this country from Germany after the Armistice. New Zealand soldiers will be administered by 2 NZEF (United Kingdom) reception group, which was to have been under the command of the late Brigadier Hargest, with Lieut-Col. L.F. Rudd second in command.&quot; (from an article entitled 'Preparations in England for Repatriated POW's', N.Z.E.F. Times, 25 September 1944, vol. 4, no. 170, p. 7)Freyberg's Circus':. In Egypt Freyberg commanded the Second New Zealand Expeditionary force (2 NZEF) as part of the British Eighth Army. The major part of the 2NZEF was the Second New Zealand Division, numbering some 20,000 men and 2800 vehicles, tanks and guns. New Zealand suffered a number of defeats in fighting the Afrikakorps. In November 1941, New Zealand opened the way to Tobruk in days of confused desert fighting at Sidi Rezegh and Belhamed. At heavy cost, New Zealand held Rommel's advance into Egypt in 1942 at the battles of Minqar Qaim, Ruweisat Ridge, and El Mrier. Finally under Montgomery New Zealand found a British general who knew how to win. The allies defeated Rommel at Alam Halfa and El Alamein in October 1942. The tide turned and the allies advanced from Egypt through Libya into Tunisia, fighting numerous bitter encounters. The final battle was at Enfidaville below the heights of Takrouna. It was followed by the surrender of the German and Italian forces in Tunisia on 13 May 1943. ('Scars on the Heart' exhibition, Auckland War Memorial Museum, New Zealand)</bio_display>
+    <user_auth_amv1 row="1">Killed in Action/Death</user_auth_amv1>
+    <user_auth_amv1_date row="1">12 Aug 1944 {Age 52}</user_auth_amv1_date>
+    <user_auth_amv1_notes row="1">Shot</user_auth_amv1_notes>
+    <user_auth_amv2 row="1">World War I, 1914-1918/War</user_auth_amv2>
+    <user_auth_amv2 row="2">World War II, 1939-1945/War</user_auth_amv2>
+    <av row="1">
+      <av-ref id="303586"/>
+    </av>
+    <av row="2">
+      <av-ref id="315113"/>
+    </av>
+    <av row="3">
+      <av-ref id="317728"/>
+    </av>
+    <av row="4">
+      <av-ref id="321535"/>
+    </av>
+    <av row="5">
+      <av-ref id="320939"/>
+    </av>
+    <av_notes row="1">Portrait, Weekly News 10 December 1941</av_notes>
+    <av_notes row="2">Portrait, The Weekly News, 23 August 1944, p. 5</av_notes>
+    <av_notes row="3">Portrait, Brigadier James Hargest</av_notes>
+    <user_auth_mv1 row="1">Army</user_auth_mv1>
+    <do_id row="1">
+      <document-ref id="7656"/>
+    </do_id>
+    <dde_filename row="1">http://www.nzetc.org/tm/scholarly/tei-WH2Maor.htm</dde_filename>
+    <dde_filename row="2">http://www.nzetc.org/tm/scholarly/tei-WH2DiCa.html</dde_filename>
+    <dde_filename row="3">http://www.nzetc.org/tm/scholarly/tei-WH2Pris.html</dde_filename>
+    <dde_filename row="4">http://www.gazettes-online.co.uk/home.aspx?geotype=London</dde_filename>
+    <dde_category row="1">Sources Used</dde_category>
+    <dde_category row="2">Sources Used</dde_category>
+    <dde_category row="3">Sources Used</dde_category>
+    <dde_category row="4">Sources Used</dde_category>
+    <dde_category row="5">Sources Used</dde_category>
+    <dde_notes row="1">Cody, J. (1956). 28 (Maori) Battalion. Wellington: Dept. of Internal Affairs, War History Branch. Digital copy.</dde_notes>
+    <dde_notes row="2">Loughnan, R. (1963). Divisional Cavalry. Wellington, Dept. of Internal Affairs, War History Branch. Digital copy.</dde_notes>
+    <dde_notes row="3">Mason, W.W. (1954). Prisoners of war. Wellington: Dept. of Internal Affairs, War History Branch. Digital copy</dde_notes>
+    <user_auth_amv3 row="1">Commander of the Most Excellent Order of the British Empire (CBE)</user_auth_amv3>
+    <user_auth_amv3 row="2">Companion of the Distinguished Service Order and 2 bars (DSO**)</user_auth_amv3>
+    <user_auth_amv3 row="3">Military Cross (MC)</user_auth_amv3>
+    <user_auth_amv3 row="4">1914-1915 Star</user_auth_amv3>
+    <user_auth_amv3 row="5">British War Medal (1914-1920)</user_auth_amv3>
+    <user_auth_amv3 row="6">Victory Medal</user_auth_amv3>
+    <user_auth_amv3 row="7">1939-1945 Star</user_auth_amv3>
+    <user_auth_amv3 row="8">Africa Star</user_auth_amv3>
+    <user_auth_amv3 row="9">France and Germany Star</user_auth_amv3>
+    <user_auth_amv3 row="10">New Zealand War Service Medal</user_auth_amv3>
+    <user_auth_amv3 row="11">Silver Jubilee Medal 1935</user_auth_amv3>
+    <user_auth_amv3 row="12">Coronation Medal 1937</user_auth_amv3>
+    <user_auth_amv3 row="13">Colonial Auxiliary Forces Decoration</user_auth_amv3>
+    <user_auth_amv3 row="14">Colonial Auxiliary Forces Long Service Medal</user_auth_amv3>
+    <user_auth_amv3 row="15">New Zealand Long and Efficient Service Medal</user_auth_amv3>
+    <user_auth_amv3 row="16">New Zealand Territorial Service Medal</user_auth_amv3>
+    <user_auth_amv3 row="17">Chevalier, Ordre national de la Légion d'honneur (France)</user_auth_amv3>
+    <user_auth_amv3 row="18">Military Cross (Greece)</user_auth_amv3>
+    <user_auth_amv3_notes row="1">Citation for Military Cross (MC): &quot;For conspicuous gallantry in action. He organised and led a bombing party, thereby driving the enemy back and securing his left flank. Later, he organised the defence of the position with great skill at a critical time.&quot; (London Gazette (online), issue 29859, published 8 December 1916, p. 12110)</user_auth_amv3_notes>
+    <user_auth_amv3_notes row="2">Citation for Distinguished Service Order (DSO): &quot;For conspicuous gallantry and devotion to duty during an advance. He commanded his battalion with marked ability. His tactical dispositions were excellent, and he secured and forwarded valuable information. Constantly in the front trenches he inspired all ranks with the keenest offensive spirit, and the uninterrupted success of the battalion operations were largely due to his fine personal leadership.&quot; (London Gazette (online), issue 30997, published 5 November 1918, p. 13136)</user_auth_amv3_notes>
+    <user_auth_amv3_notes row="3">Citation for Legion of Honour, Chevalier (France), appeared in the London Gazette on 29 January 1919, p. 1446 (see McDonald 2001).</user_auth_amv3_notes>
+    <ethnicity row="1">Ngati Hine/Maori</ethnicity>
+    <ethnicity_community row="1">This is Hapu</ethnicity_community>
+    <ethnicity_language row="1">This Is Waka</ethnicity_language>
+    <religion row="1">Anglican/Christian</religion>
+    <religion row="2">Jewish</religion>
+    <user_auth_amv5 row="1">Single</user_auth_amv5>
+    <user_auth_amv5 row="2">Single</user_auth_amv5>
+    <user_auth_amv5 row="3">Married</user_auth_amv5>
+    <user_auth_amv5_date row="1">Pre 16 Oct 1914</user_auth_amv5_date>
+    <user_auth_amv5_date row="2">Pre 22 Feb 1916</user_auth_amv5_date>
+    <user_auth_amv5_date row="3">Pre 02 May 1940</user_auth_amv5_date>
+    <au_originating_database_date row="1">25 May 1998</au_originating_database_date>
+    <au_originating_database_no row="1">18100</au_originating_database_no>
+    <au_cataloger row="1">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="2">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="3">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger row="4">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="5">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="6">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger row="7">Alison Taylor (Auckland City)</au_cataloger>
+    <au_cataloger row="8">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger row="9">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger row="10">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger row="11">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="12">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="13">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="14">Christina Tuitubou</au_cataloger>
+    <au_cataloger row="15">Paul Hobbs (Auckland City)</au_cataloger>
+    <au_cataloger_date row="1">17 Apr 2008</au_cataloger_date>
+    <au_cataloger_date row="2">18 Jun 2009</au_cataloger_date>
+    <au_cataloger_date row="3">29 Nov 2009</au_cataloger_date>
+    <au_cataloger_date row="4">15 Mar 2010</au_cataloger_date>
+    <au_cataloger_date row="5">02 Sep 2010</au_cataloger_date>
+    <au_cataloger_date row="6">12 Jun 2011</au_cataloger_date>
+    <au_cataloger_date row="7">14 Jun 2011</au_cataloger_date>
+    <au_cataloger_date row="8">19 Jun 2011</au_cataloger_date>
+    <au_cataloger_date row="9">11 Sep 2011</au_cataloger_date>
+    <au_cataloger_date row="10">30 Oct 2011</au_cataloger_date>
+    <au_cataloger_date row="11">31 Oct 2011</au_cataloger_date>
+    <au_cataloger_date row="12">02 Dec 2011</au_cataloger_date>
+    <au_cataloger_date row="13">29 Jan 2013</au_cataloger_date>
+    <au_cataloger_date row="14">11 Jun 2013</au_cataloger_date>
+    <au_cataloger_date row="15">27 Jan 2014</au_cataloger_date>
+    <general_flag row="1">Publish Online</general_flag>
+    <general_flag_notes row="1">3/10/2007</general_flag_notes>
+    <user_text_1 row="1">DSO citation: &quot;For conspicuous gallantry and devotion to duty. He fought his battery until the enemy were within 500 yards, and his ammunition exhausted, at the same time rallying infantry stragglers and manning a fire trench, then made a reconnaissance into a wood sending back valuable information. He was finally wounded by rifle fire at close range.&quot; (London Gazette, 26 July 1918)
+DSO Bar citation: &quot;Escape from Camp 12, P.M. 3200, Italy (General's Camp). This camp was extremely well guarded and in consequence it was decided that the only possible method of escape would be by way of a tunnel. n the 18th September, 1942, tunnelling began. All officers and other ranks worked, with the exception of one officer who was awaiting repatriation.
+The entrance to the tunnel was through a sealed up chapel which all soil was placed. The work, which consisted of a 3 foot by 3 foot tunnel, 40 feet long with a 10 foot shaft at the entrance and a 7 foot shaft at the exit, was completed by the end of February 1943.
+At 2100 hours on the 29th March, 1943, Brigadiers Miles and Hargest, in company with four other officers, escaped through the tunnel. The four other officers were subsequently recaptured. Brigadiers Miles and Hargest dressed as workmen and having walked to Florence station, caught a train to Milan where they went to the North station. They caught a train to Como and walked towards Chiasso. 2 kilometres from Chiasso they left the main road and proceeded across country until they reached a knoll south of Chiasso where the frontier lay along the opposite slope of a valley below them. The frontier consisted of heavy cyclone netting 12 foot high interlaced with brambles and with small bells near the top. They cut the wire with pliers at ground level without making much noise and came on to Swiss territory at 220 hours on the 30th March, 1943. They gave themselves up to the police at Mendrisio and were released in Berne on the 2nd April, 1943.&quot; (London Gazette, 21 September 1944)
+CBE. Posthumous 1944</user_text_1>
+  </person>
+  <dictionary id="event">
+    <name>Event</name>
+    <field id="au_code">
+      <name>System ID</name>
+    </field>
+    <field id="au_name">
+      <name>Name</name>
+    </field>
+    <field id="type">
+      <name>Type</name>
+    </field>
+    <field id="date">
+      <name>Date</name>
+    </field>
+    <field id="period">
+      <name>Period</name>
+    </field>
+    <field id="place">
+      <name>Place</name>
+    </field>
+    <field id="person">
+      <name>Person</name>
+    </field>
+    <field id="user_value_1">
+      <name>Number of Officers</name>
+    </field>
+    <field id="user_value_2">
+      <name>Number of Men</name>
+    </field>
+    <field id="user_value_3">
+      <name>Number of Horses</name>
+    </field>
+    <field id="user_value_4">
+      <name>Embarked</name>
+    </field>
+    <field id="user_value_5">
+      <name>Gross Tonnage</name>
+    </field>
+    <field id="au_notes">
+      <name>Description</name>
+    </field>
+  </dictionary>
+  <event id="1267">
+    <au_code row="1">1267</au_code>
+    <au_name row="1">HMNZT 5 | HMNZT 9</au_name>
+    <type row="1">Voyage</type>
+    <date row="1">16 Oct 1914</date>
+    <period row="1">World War 1, 1914-18/wars</period>
+    <place row="1">Wellington/New Zealand</place>
+    <place row="2">Suez/Egypt</place>
+  </event>
+  <event id="683">
+    <au_code row="1">683</au_code>
+    <au_name row="1">HMNZT 41</au_name>
+    <type row="1">Voyage</type>
+    <type row="2">Embarkation - Reinforcements</type>
+    <date row="1">22 Feb 1916-31 Mar 1916</date>
+    <period row="1">World War 1, 1914-18/wars</period>
+    <place row="1">Wellington/New Zealand</place>
+    <place row="2">Suez/Egypt</place>
+    <person row="1">Waihora</person>
+  </event>
+  <event id="1241">
+    <au_code row="1">1241</au_code>
+    <au_name row="1">Unknown Transport</au_name>
+    <type row="1">Voyage</type>
+    <date row="1">Apr 1942</date>
+    <place row="1">Newfoundland/Canada</place>
+    <place row="2">Prestwick/Ayrshire/Strathclyde/Scotland</place>
+  </event>
+  <event id="1346">
+    <au_code row="1">1346</au_code>
+    <au_name row="1">North Africa</au_name>
+    <type row="1">campaign</type>
+  </event>
+  <event id="881">
+    <au_code row="1">881</au_code>
+    <au_name row="1">POW - Bardia</au_name>
+    <type row="1">POW Camp</type>
+    <period row="1">World War 2/wars</period>
+    <au_notes row="1">A POW Camp Event for Cenotaph</au_notes>
+  </event>
+  <event id="1050">
+    <au_code row="1">1050</au_code>
+    <au_name row="1">POW - P.G. 78 Italy</au_name>
+    <type row="1">POW Camp</type>
+    <period row="1">World War 2/wars</period>
+    <place row="1">Italy</place>
+    <au_notes row="1">A POW Camp Event for Cenotaph</au_notes>
+  </event>
+  <event id="1022">
+    <au_code row="1">1022</au_code>
+    <au_name row="1">POW - P.G. 12, Florence, Italy</au_name>
+    <type row="1">POW Camp</type>
+    <period row="1">World War 2/wars</period>
+    <place row="1">Italy</place>
+    <au_notes row="1">A POW Camp Event for Cenotaph</au_notes>
+  </event>
+  <dictionary id="av">
+    <name>Photo/Audio-Visual</name>
+    <field id="id">
+      <name>System ID</name>
+    </field>
+    <field id="caption">
+      <name>Caption</name>
+    </field>
+    <field id="im_ref">
+      <name>Digital Filename</name>
+    </field>
+  </dictionary>
+  <av id="303586">
+    <id row="1">303586</id>
+    <caption row="1">Portrait, Weekly News 10 December 1941</caption>
+    <im_ref row="1">Cenotaph\WeeklyNews\1941\1210p27r1c1_hargest.jpg</im_ref>
+  </av>
+  <av id="315113">
+    <id row="1">315113</id>
+    <caption row="1">Portrait, The Weekly News, 23 August 1944, p. 5</caption>
+    <im_ref row="1">Cenotaph\ww2\C017.jpg</im_ref>
+  </av>
+  <av id="317728">
+    <id row="1">317728</id>
+    <caption row="1">Portrait, Brigadier James Hargest</caption>
+    <im_ref row="1">Cenotaph\ww2\B08127.jpg</im_ref>
+  </av>
+  <av id="321535">
+    <id row="1">321535</id>
+    <im_ref row="1">Cenotaph\nomroll\NZEF01_0303.jpg</im_ref>
+  </av>
+  <av id="320939">
+    <id row="1">320939</id>
+    <im_ref row="1">Cenotaph\nomroll\NZEF02_0023_0005.jpg</im_ref>
+  </av>
+  <dictionary id="document">
+    <name>Document</name>
+    <field id="id">
+      <name>System ID</name>
+    </field>
+    <field id="primary_title">
+      <name>Primary Title</name>
+    </field>
+    <field id="other_title">
+      <name>Other Title/Source</name>
+    </field>
+    <field id="primary_person">
+      <name>Primary Person</name>
+    </field>
+    <field id="published_date">
+      <name>Date Published</name>
+    </field>
+  </dictionary>
+  <document id="7656">
+    <id row="1">7656</id>
+    <primary_title row="1">Official History of the Otago Regiment, N.Z.E.F.  in the Great War 1914-1918</primary_title>
+    <other_title row="1">Offical History, (1921), J Wilkie</other_title>
+    <primary_person row="1">Lieut. AE Byrne</primary_person>
+  </document>
+</vernon>
