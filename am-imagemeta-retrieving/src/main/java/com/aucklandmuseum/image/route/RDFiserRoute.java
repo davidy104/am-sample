@@ -31,7 +31,6 @@ public class RDFiserRoute extends RouteBuilder {
 	@Value("${imageMeta.output.queue:imageQueue}")
 	private String queueEndpoint;
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public void configure() throws Exception {
 		// ExecutorService executorService = new ThreadPoolBuilder(getContext())
@@ -89,9 +88,5 @@ public class RDFiserRoute extends RouteBuilder {
 				.to("jms:queue:" + queueEndpoint
 						+ "?jmsMessageType=Map&requestTimeout=10s").end();
 
-		// from("direct:imgMetaProcess").process(imageMetadataRetrievingProcessor)
-		// .transform(imageMetaDataTransformer)
-		// .log("after imgmeta process ${body}")
-		// .to("jms:queue:" + queueEndpoint + "?jmsMessageType=Map");
 	}
 }

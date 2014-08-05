@@ -105,6 +105,18 @@
 			</dependency>
 
 			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-xstream</artifactId>
+				<version>${camel.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-xmljson</artifactId>
+				<version>${camel.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.apache.activemq</groupId>
 				<artifactId>activemq-camel</artifactId>
 				<version>${activemq.version}</version>
