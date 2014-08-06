@@ -16,6 +16,8 @@ import com.aucklandmuseum.config.CamelActivemqConfig;
 import com.aucklandmuseum.config.CamelSpringContextConfig;
 import com.aucklandmuseum.image.route.RDFiserMulticastRoute;
 import com.aucklandmuseum.image.route.RDFiserRoute;
+import com.aucklandmuseum.image.route.ToJsonRoute;
+import com.aucklandmuseum.image.route.XmlToMapRoute;
 
 @Configuration
 @ComponentScan(basePackages = "com.aucklandmuseum.image")
@@ -30,6 +32,12 @@ public class ApplicationConfiguration {
 
 	@Resource
 	private RDFiserMulticastRoute rdfiserMulticastRoute;
+
+	@Resource
+	private XmlToMapRoute xmlToMapRoute;
+
+	@Resource
+	private ToJsonRoute toJsonRoute;
 
 	@Bean
 	public static PropertyPlaceholderConfigurer properties() {
@@ -46,5 +54,7 @@ public class ApplicationConfiguration {
 		SpringCamelContext springCamelContext = (SpringCamelContext) camelContext;
 		springCamelContext.addRoutes(rdfiserRoute);
 		springCamelContext.addRoutes(rdfiserMulticastRoute);
+		springCamelContext.addRoutes(xmlToMapRoute);
+		springCamelContext.addRoutes(toJsonRoute);
 	}
 }

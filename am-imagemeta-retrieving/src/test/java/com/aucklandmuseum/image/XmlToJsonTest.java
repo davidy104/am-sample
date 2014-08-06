@@ -4,11 +4,13 @@ import java.io.File;
 import java.net.URL;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.xml.XmlMapper;
 
+@Ignore
 public class XmlToJsonTest {
 	private static final String XML_REQUEST_FILE = "/cenotaph-new.xml";
 
