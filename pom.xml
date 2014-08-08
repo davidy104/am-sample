@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -20,25 +21,32 @@
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<sesame.version>2.7.12</sesame.version>
 
-		<groovy.version>2.1.9</groovy.version>
+		<groovy.version>2.3.6</groovy.version>
 		<activemq.version>5.10.0</activemq.version>
 		<slf4j.version>1.7.7</slf4j.version>
+		<imgscalr.version>4.2</imgscalr.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>org.imgscalr</groupId>
+				<artifactId>imgscalr-lib</artifactId>
+				<version>${imgscalr.version}</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy</artifactId>
+				<version>${groovy.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.apache.sanselan</groupId>
 				<artifactId>sanselan</artifactId>
 				<version>0.97-incubator</version>
 			</dependency>
-
-			<dependency>
-				<groupId>org.codehaus.groovy</groupId>
-				<artifactId>groovy-all</artifactId>
-				<version>${groovy.version}</version>
-			</dependency>
-
 
 			<dependency>
 				<groupId>org.openrdf.sesame</groupId>
@@ -178,6 +186,7 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
+					<compilerId>groovy-eclipse-compiler</compilerId>
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -199,7 +208,6 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.11</version>
-
 				</plugin>
 			</plugins>
 
@@ -208,5 +216,6 @@
 	<modules>
 		<module>am-shared</module>
 		<module>am-imagemeta-retrieving</module>
+		<module>am-image</module>
 	</modules>
 </project>

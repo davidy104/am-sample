@@ -51,9 +51,7 @@ public class ImageMetadataRetrievingProcessor implements Processor {
 		LOGGER.info("image: {} ", image.getAbsolutePath());
 		final IImageMetadata metadata = Sanselan.getMetadata(image);
 		exchange.setProperty(IMG_METADATA, metadata);
-//		LOGGER.info("metadata: {} ", metadata);
-		// for testing
-		// Thread.sleep(5000);
+
 		LOGGER.info("ImageMetadataRetrievingProcessor end");
 	}
 

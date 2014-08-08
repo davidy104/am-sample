@@ -39,9 +39,10 @@ public class ImageTestUtils {
 
 		Map<String, String> imageInfoMap = new HashMap<>();
 		imageInfoMap.put("System ID", "321535");
-		imageInfoMap.put("Digital Filename", "Cenotaph\\nomroll\\abc.jpg");
+		imageInfoMap.put("Digital Filename", "Cenotaph\\WeeklyNews\\1941\\abc.jpg");
+//		imageInfoMap.put("Digital Filename", "Cenotaph\\nomroll\\abc.jpg");
 		imageInfoMap.put("@id", "321535");
-
+		
 		request.put("av", imageInfoMap);
 		return request;
 	}
