@@ -186,8 +186,11 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
+					
 					<compilerId>groovy-eclipse-compiler</compilerId>
+					
 				</configuration>
+		
 				<dependencies>
 					<dependency>
 						<groupId>org.codehaus.groovy</groupId>
@@ -200,6 +203,7 @@
 						<version>2.1.8-01</version>
 					</dependency>
 				</dependencies>
+				
 			</plugin>
 		</plugins>
 		<pluginManagement>
