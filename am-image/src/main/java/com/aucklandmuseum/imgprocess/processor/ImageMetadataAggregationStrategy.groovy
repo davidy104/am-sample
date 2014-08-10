@@ -28,7 +28,7 @@ class ImageMetadataAggregationStrategy implements AggregationStrategy {
 				IImageMetadata.class)
 
 		if(metadata) {
-			metadata.getItems().each() {
+			metadata.getItems().each{
 				Item item = (Item)it
 				metadataMap.put(item.keyword, item.text)
 			}

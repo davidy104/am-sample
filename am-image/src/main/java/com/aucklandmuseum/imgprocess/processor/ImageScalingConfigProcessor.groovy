@@ -30,7 +30,7 @@ class ImageScalingConfigProcessor implements Processor {
 
 		def imageScalingConfigurationArray = imageScalingConfiguration.split(CONFIG_SEPREATOR)
 
-		imageScalingConfigurationArray.each {it->
+		imageScalingConfigurationArray.each {
 			Integer width,hight
 			String name
 			if(it.indexOf("=")!=-1){

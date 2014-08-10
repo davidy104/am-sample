@@ -1,9 +1,12 @@
 package com.aucklandmuseum.imgprocess;
 
+import java.io.File;
+import java.net.URL;
 import java.util.Map;
 
 import org.apache.camel.Produce;
 import org.apache.camel.ProducerTemplate;
+import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -56,6 +59,20 @@ public class VernonRouteTest {
 
 		LOGGER.info("response:{} ", response);
 
+	}
+
+	@Test
+	public void testFileExtension() throws Exception {
+		URL url = VernonRouteTest.class.getResource(WITHAV_RESP);
+		String expectedResponse = null;
+		File file = new File(url.getFile());
+		String fileExtension = FilenameUtils.getExtension(file
+				.getAbsolutePath());
+		System.out.println("fileExtension: " + fileExtension);
+
+		// try (FileInputStream fisTargetFile = new FileInputStream(file)) {
+		// expectedResponse = IOUtils.toString(fisTargetFile, "UTF-8");
+		// }
 	}
 
 }

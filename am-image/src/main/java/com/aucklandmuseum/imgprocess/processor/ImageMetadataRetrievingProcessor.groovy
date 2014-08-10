@@ -6,6 +6,7 @@ import org.apache.camel.ConsumerTemplate
 import org.apache.camel.Exchange
 import org.apache.camel.Processor
 import org.apache.commons.io.FileUtils
+import org.apache.commons.io.FilenameUtils;
 import org.apache.sanselan.Sanselan
 import org.apache.sanselan.common.IImageMetadata
 import org.slf4j.Logger
@@ -55,6 +56,7 @@ public class ImageMetadataRetrievingProcessor implements Processor {
 				throw new IllegalArgumentException()
 			}
 			File image = imgMetadataExchange.getIn().getBody(File.class)
+			exchange.setProperty("imageExtension", FilenameUtils.getExtension(image.getAbsolutePath()))
 			exchange.setProperty("imageBytes", FileUtils.readFileToByteArray(image))
 			exchange.getIn().setBody(Sanselan.getMetadata(image), IImageMetadata.class)
 		} catch (e) {

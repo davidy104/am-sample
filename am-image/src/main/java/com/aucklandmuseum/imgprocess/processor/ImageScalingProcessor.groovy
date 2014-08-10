@@ -21,13 +21,12 @@ import com.aucklandmuseum.imgprocess.ImageScalingBean;
 @Slf4j
 class ImageScalingProcessor implements Processor {
 
-	static final String EXTENSION = ".jpeg"
-
 	@Override
 	public void process(Exchange exchange) throws Exception {
 		byte[] imgBytes = exchange.getProperty("imageBytes", byte[].class)
+		String imageExtension = exchange.getProperty("imageExtension", String.class)
 		ImageScalingBean imageScalingBean = exchange.getIn().getBody(ImageScalingBean.class);
-		String fileName = imageScalingBean.imageName + EXTENSION
+		String fileName = imageScalingBean.imageName + "."+imageExtension
 
 		if(imageScalingBean.imageName != 'original'){
 			InputStream inputstream;
@@ -43,7 +42,7 @@ class ImageScalingProcessor implements Processor {
 								return this.buf
 							}
 						};
-				ImageIO.write(bufferedImage, "jpeg", output)
+				ImageIO.write(bufferedImage, imageExtension, output)
 				InputStream imageInputStream = new ByteArrayInputStream(
 						output.toByteArray(), 0, output.size())
 				exchange.setProperty("imageBytes", imageInputStream)
