@@ -25,6 +25,8 @@
 		<activemq.version>5.10.0</activemq.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<imgscalr.version>4.2</imgscalr.version>
+
+		<aws.version>1.8.5</aws.version>
 	</properties>
 
 	<dependencyManagement>
@@ -100,6 +102,7 @@
 				<version>${camel.version}</version>
 			</dependency>
 
+
 			<dependency>
 				<groupId>org.apache.camel</groupId>
 				<artifactId>camel-jackson</artifactId>
@@ -174,6 +177,21 @@
 				<artifactId>commons-io</artifactId>
 				<version>${commons-io.version}</version>
 			</dependency>
+
+			<!-- aws -->
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk</artifactId>
+				<version>${aws.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.camel</groupId>
+				<artifactId>camel-aws</artifactId>
+				<version>${camel.version}</version>
+			</dependency>
+
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -186,11 +204,11 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
-					
+
 					<compilerId>groovy-eclipse-compiler</compilerId>
-					
+
 				</configuration>
-		
+
 				<dependencies>
 					<dependency>
 						<groupId>org.codehaus.groovy</groupId>
@@ -203,7 +221,7 @@
 						<version>2.1.8-01</version>
 					</dependency>
 				</dependencies>
-				
+
 			</plugin>
 		</plugins>
 		<pluginManagement>
@@ -221,5 +239,6 @@
 		<module>am-shared</module>
 		<module>am-imagemeta-retrieving</module>
 		<module>am-image</module>
+		<module>am-image-v1</module>
 	</modules>
 </project>
