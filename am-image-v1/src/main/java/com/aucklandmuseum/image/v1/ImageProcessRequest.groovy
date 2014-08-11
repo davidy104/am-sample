@@ -6,5 +6,5 @@ import groovy.transform.ToString
 class ImageProcessRequest implements Serializable {
 	String imagePath
 	String imageFileName
-	Set<ImageTransform> imageTransforms = new HashSet<ImageTransform>()
+	def imageTransforms = []
 }

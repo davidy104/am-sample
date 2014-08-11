@@ -33,7 +33,7 @@ class ImageMetadataRetrievingProcessor implements Processor {
 				throw new RuntimeException()
 			}
 			imageProcessRequest.imageTransforms << new ImageTransform(imageName:"original")
-			exchange.setProperty("imageScalingConfigs", imageProcessRequest.imageTransforms)
+//			exchange.setProperty("imageScalingConfigs", imageProcessRequest.imageTransforms)
 			File image = imgMetadataExchange.getIn().getBody(File.class)
 			exchange.setProperty("imageExtension", FilenameUtils.getExtension(image.getAbsolutePath()))
 			exchange.setProperty("imageBytes", FileUtils.readFileToByteArray(image))
