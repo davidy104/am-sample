@@ -45,7 +45,6 @@ public class AwsConfiguration {
 		final ClientConfiguration clientConfig = new ClientConfiguration();
 		clientConfig.setProtocol(Protocol.HTTP);
 		AmazonS3 amazonS3 = new AmazonS3Client(credentials(), clientConfig);
-
 		Region region = Region.getRegion(Regions.AP_SOUTHEAST_2);
 		amazonS3.setRegion(region);
 		return amazonS3;

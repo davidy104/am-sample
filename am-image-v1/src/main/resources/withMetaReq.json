@@ -1,0 +1,17 @@
+{
+	"sourceImage":"Cenotaph\\nomroll\\abc.jpg",
+	"imageTargetPath":"/vernon/av/400000",
+	"transform":[
+		{
+			"imageName":"standard",
+			"width":"1024",
+			"hight":"1024"
+		},
+		{
+			"imageName":"thumbnail",
+			"width":"1217",
+			"hight":"1217"
+		}
+		
+	]
+}

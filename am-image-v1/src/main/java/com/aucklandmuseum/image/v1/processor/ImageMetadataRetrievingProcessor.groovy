@@ -10,6 +10,7 @@ import org.apache.commons.io.FilenameUtils
 import org.apache.sanselan.Sanselan
 import org.apache.sanselan.common.IImageMetadata
 import org.apache.sanselan.common.ImageMetadata.Item
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 
 import com.aucklandmuseum.image.v1.ImageNotFoundException
@@ -22,22 +23,26 @@ class ImageMetadataRetrievingProcessor implements Processor {
 
 	ConsumerTemplate consumerTemplate
 
+	@Value('${filesys.basepath:inbox}')
+	String imageBasePath
+
 	@Override
 	public void process(Exchange exchange) throws Exception {
 		ImageProcessRequest imageProcessRequest = exchange.in.getBody(ImageProcessRequest.class)
 		def metadataMap = [:]
 		try {
-			Exchange imgMetadataExchange = this.consumerTemplate.receive("file://" + imageProcessRequest.imagePath
-					+ "?fileName=" + imageProcessRequest.imageFileName, 3000)
+			this.consumerTemplate = exchange.getContext().createConsumerTemplate()
+			Exchange imgMetadataExchange = this.consumerTemplate.receive("file://" +imageBasePath + imageProcessRequest.sourceImagePath
+					+ "?fileName=" + imageProcessRequest.sourceImageName, 3000)
 			if (!imgMetadataExchange) {
 				throw new RuntimeException()
 			}
 			imageProcessRequest.imageTransforms << new ImageTransform(imageName:"original")
-//			exchange.setProperty("imageScalingConfigs", imageProcessRequest.imageTransforms)
+			exchange.setProperty("imageScalingConfigs", imageProcessRequest.imageTransforms)
 			File image = imgMetadataExchange.getIn().getBody(File.class)
-			exchange.setProperty("imageExtension", FilenameUtils.getExtension(image.getAbsolutePath()))
 			exchange.setProperty("imageBytes", FileUtils.readFileToByteArray(image))
-
+			exchange.setProperty("imageExtension", FilenameUtils.getExtension(image.getAbsolutePath()))
+			exchange.setProperty("outputPath", imageProcessRequest.imageTargetPath)
 
 			IImageMetadata metadata = Sanselan.getMetadata(image)
 			if(metadata) {
