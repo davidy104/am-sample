@@ -38,12 +38,16 @@ class ImageMetadataRetrievingProcessor implements Processor {
 		def originalTransform = [name:'original']
 		imageTransforms << originalTransform
 		exchange.setProperty("imageTransforms", imageTransforms)
+		def imgMetaBody = imgMetadataExchange.getIn().getBody()
+
+		//		File image = imgMetadataExchange.getIn().getBody(File.class)
 		File image = imgMetadataExchange.getIn().getBody(File.class)
+		InputStream imageStream = imgMetadataExchange.getIn().getBody(InputStream.class)
 		exchange.setProperty("imageBytes", FileUtils.readFileToByteArray(image))
 		exchange.setProperty("imageExtension", FilenameUtils.getExtension(image.getAbsolutePath()))
 		exchange.setProperty("outputPath", imageProcessRequest['outputPath'])
 
-		IImageMetadata metadata = Sanselan.getMetadata(image)
+		IImageMetadata metadata = Sanselan.getMetadata(imageStream,imageProcessRequest['imageFileName'])
 		if(metadata) {
 			metadata.getItems().each{
 				Item item = (Item)it

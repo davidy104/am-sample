@@ -70,7 +70,7 @@ public class ImageProcessIntegrationTest {
 	}
 
 	@Test
-	@Ignore("when need to delete images from s3")
+//	@Ignore("when need to delete images from s3")
 	public void testS3Delete() throws Exception {
 		amazonS3.deleteObject(awsConfigBean.getBucketName(),
 				"/vernon/av/1/original.jpg");
